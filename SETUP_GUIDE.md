@@ -1,106 +1,81 @@
-# Golf Tycoon - Setup Guide
+# Golf Tycoon - Mac Setup Guide
 
-This guide will walk you through everything you need to install and do to get the project running on your machine. No developer experience required!
+This guide will walk you through everything you need to get the game running. No developer experience required!
 
-## Step 1: Install Unity Hub
+## Step 1: Install Git
 
-1. Go to https://unity.com/download
-2. Click **Download Unity Hub**
-3. Run the installer and follow the prompts
-4. Open Unity Hub and create a free Unity account (or sign in if you have one)
+1. Press **Cmd + Space**, type **Terminal**, and open it
+2. Paste this and press Enter:
+   ```
+   git --version
+   ```
+3. If Git isn't installed, a popup will appear asking to install Command Line Tools — click **Install**
+4. Wait for it to finish (a few minutes)
 
-## Step 2: Install the Correct Unity Version
+## Step 2: Download the Project
 
-The project uses **Unity 6 (version 6000.4.1f1)**. You need this exact version.
-
-1. In Unity Hub, click **Installs** on the left sidebar
-2. Click **Install Editor**
-3. Look for version **6000.4.1f1** in the list
-   - If you don't see it, click **Archive** at the top, then find it on the Unity download archive page
-4. When selecting modules, make sure these are checked:
-   - **iOS Build Support** (if you have a Mac)
-   - **Android Build Support** (check both "Android SDK & NDK Tools" and "OpenJDK")
-5. Click **Install** and wait for it to finish (this can take a while)
-
-## Step 3: Install Git
-
-You need Git to download the project code.
-
-### On Mac:
-1. Open **Terminal** (search for it in Spotlight with Cmd+Space)
-2. Type `git --version` and press Enter
-3. If Git isn't installed, macOS will prompt you to install the Command Line Tools - click **Install**
-4. Wait for the installation to complete
-
-### On Windows:
-1. Go to https://git-scm.com/download/win
-2. Download and run the installer
-3. Use all the default settings, just keep clicking **Next** then **Install**
-4. After install, open **Git Bash** from your Start menu to verify it works
-
-## Step 4: Download the Project
-
-1. Open **Terminal** (Mac) or **Git Bash** (Windows)
-2. Navigate to where you want the project. For example:
+1. In the same Terminal window, paste these lines one at a time:
    ```
    cd ~/Desktop
    ```
-3. Clone the repository:
    ```
    git clone https://github.com/nategreat13/golf-tycoon.git
    ```
-4. Wait for the download to complete
+2. Wait for the download to complete. You'll see a `golf-tycoon` folder on your Desktop.
+
+## Step 3: Install Unity Hub
+
+1. Go to https://unity.com/download
+2. Click **Download Unity Hub**
+3. Open the downloaded `.dmg` file and drag Unity Hub to your Applications folder
+4. Open Unity Hub
+5. Create a free Unity account (or sign in if you have one)
+
+## Step 4: Install the Correct Unity Version
+
+The project requires **Unity 6 (version 6000.4.1f1)** — it won't work with other versions.
+
+1. In Unity Hub, click **Installs** on the left sidebar
+2. Click **Install Editor**
+3. Look for version **6000.4.1f1**
+   - If you don't see it, click **Archive** at the top, which will take you to Unity's download archive — find 6000.4.1f1 there
+4. When selecting modules, check:
+   - **iOS Build Support**
+5. Click **Install** and wait — this takes a while (several GB download)
 
 ## Step 5: Open the Project in Unity
 
-1. Open **Unity Hub**
-2. Click **Projects** on the left sidebar
-3. Click **Add** (or **Open**) and navigate to the `golf-tycoon` folder you just downloaded
-4. Select the folder and click **Open**
-5. Unity will import the project - **this will take several minutes the first time** (it's processing all the assets). Be patient!
-6. If Unity asks about enabling the new Input System, click **Yes** and let it restart
+1. In Unity Hub, click **Projects** on the left sidebar
+2. Click **Add** and navigate to `Desktop > golf-tycoon`
+3. Select the folder and click **Open**
+4. Unity will import everything — **this takes several minutes the first time**. Just let it run.
+5. If Unity asks about enabling the new Input System, click **Yes** and let it restart
 
 ## Step 6: Run the Game
 
-1. Once the project is open in Unity, go to the **Project** panel (usually at the bottom)
-2. Navigate to **Assets > Scenes**
-3. Double-click **Boot.unity** to open the boot scene
-4. If the scenes aren't set up yet, go to the top menu bar: **Golf Tycoon > Setup Entire Project**
-5. Click the **Play** button (triangle icon at the top center of Unity) to run the game!
+1. In the **Project** panel (bottom of the Unity window), navigate to **Assets > Scenes**
+2. Double-click **Boot.unity**
+3. Go to the top menu: **Golf Tycoon > Setup Entire Project** (this creates all the game assets)
+4. Click the **Play** button (triangle at the top center) to run the game!
+
+## Getting Updates
+
+When I push new changes, you just need to pull them:
+
+1. Open Terminal
+2. Run:
+   ```
+   cd ~/Desktop/golf-tycoon
+   git pull
+   ```
+3. Switch back to Unity — it will re-import any changed files automatically
 
 ## Troubleshooting
 
-### "Unity version not found"
-Make sure you installed exactly **6000.4.1f1**. Unity Hub may offer to install the correct version when you try to open the project.
+**Unity says the version doesn't match** — Make sure you installed exactly **6000.4.1f1**. Unity Hub should offer to install it for you.
 
-### "Missing scripts" or errors in Console
-Go to **Golf Tycoon > Setup Entire Project** in the top menu to regenerate all the scenes and assets.
+**Errors in the Console** — Go to **Golf Tycoon > Setup Entire Project** in the top menu to regenerate everything.
 
-### UI text is invisible
-This is a known issue. If you see a green screen but no text:
-1. Make sure you have TextMeshPro imported (Unity should prompt you automatically)
-2. Try running **Golf Tycoon > Setup Entire Project** again
+**Green screen but no text** — TextMeshPro might not be imported. Unity usually prompts you; if not, try **Golf Tycoon > Setup Entire Project** again.
 
-### "Unsafe code not allowed" error
-1. Go to **Edit > Project Settings > Player**
-2. Under **Other Settings**, check **Allow 'unsafe' Code**
-
-### General issues
-- Make sure you're opening **Boot.unity**, not another scene
-- Check the **Console** window (Window > General > Console) for red error messages
-- Try closing and reopening Unity
-
-## Pulling Updates
-
-When new changes are pushed to the project:
-
-1. Open **Terminal** (Mac) or **Git Bash** (Windows)
-2. Navigate to the project folder:
-   ```
-   cd ~/Desktop/golf-tycoon
-   ```
-3. Pull the latest changes:
-   ```
-   git pull
-   ```
-4. Open the project in Unity again - it will re-import any changed files
+**"Unsafe code" error** — Go to **Edit > Project Settings > Player > Other Settings** and check **Allow 'unsafe' Code**.
