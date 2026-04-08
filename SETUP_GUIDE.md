@@ -11,15 +11,12 @@ This guide will walk you through everything you need to get the game running. No
 
 ## Step 2: Download the Project
 
-1. In Git Bash, paste this and press Enter:
-   ```
-   cd /c/Users/$USER/Desktop
-   ```
-2. Then paste this and press Enter:
+1. Open Git Bash. It should start in your user folder (you'll see `~` in the prompt).
+2. Paste this and press Enter:
    ```
    git clone https://github.com/nategreat13/golf-tycoon.git
    ```
-3. Wait for the download to complete. You'll see a `golf-tycoon` folder on your Desktop.
+3. Wait for the download to complete. The project will be in a `golf-tycoon` folder inside your user folder.
 
 ## Step 3: Install Unity Hub
 
@@ -44,7 +41,7 @@ The project requires **Unity 6 (version 6000.4.1f1)** — it won't work with oth
 ## Step 5: Open the Project in Unity
 
 1. In Unity Hub, click **Projects** on the left sidebar
-2. Click **Add** and navigate to `Desktop > golf-tycoon`
+2. Click **Add** and navigate to your user folder (e.g. `C:\Users\YourName\golf-tycoon`)
 3. Select the folder and click **Open**
 4. Unity will import everything — **this takes several minutes the first time**. Just let it run.
 5. If Unity asks about enabling the new Input System, click **Yes** and let it restart
@@ -63,7 +60,7 @@ When I push new changes, you just need to pull them:
 1. Open Git Bash
 2. Run:
    ```
-   cd /c/Users/$USER/Desktop/golf-tycoon
+   cd ~/golf-tycoon
    git pull
    ```
 3. Switch back to Unity — it will re-import any changed files automatically
