@@ -1,20 +1,17 @@
-# Golf Tycoon - Mac Setup Guide
+# Golf Tycoon - Windows Setup Guide
 
 This guide will walk you through everything you need to get the game running. No developer experience required!
 
 ## Step 1: Install Git
 
-1. Press **Cmd + Space**, type **Terminal**, and open it
-2. Paste this and press Enter:
-   ```
-   git --version
-   ```
-3. If Git isn't installed, a popup will appear asking to install Command Line Tools — click **Install**
-4. Wait for it to finish (a few minutes)
+1. Go to https://git-scm.com/download/win
+2. Download and run the installer
+3. Use all the default settings — just keep clicking **Next**, then **Install**
+4. When it's done, open **Git Bash** from your Start menu to make sure it works
 
 ## Step 2: Download the Project
 
-1. In the same Terminal window, paste these lines one at a time:
+1. In Git Bash, paste these lines one at a time:
    ```
    cd ~/Desktop
    ```
@@ -27,7 +24,7 @@ This guide will walk you through everything you need to get the game running. No
 
 1. Go to https://unity.com/download
 2. Click **Download Unity Hub**
-3. Open the downloaded `.dmg` file and drag Unity Hub to your Applications folder
+3. Run the downloaded installer and follow the prompts
 4. Open Unity Hub
 5. Create a free Unity account (or sign in if you have one)
 
@@ -40,7 +37,7 @@ The project requires **Unity 6 (version 6000.4.1f1)** — it won't work with oth
 3. Look for version **6000.4.1f1**
    - If you don't see it, click **Archive** at the top, which will take you to Unity's download archive — find 6000.4.1f1 there
 4. When selecting modules, check:
-   - **iOS Build Support**
+   - **Android Build Support** (check both "Android SDK & NDK Tools" and "OpenJDK")
 5. Click **Install** and wait — this takes a while (several GB download)
 
 ## Step 5: Open the Project in Unity
@@ -62,7 +59,7 @@ The project requires **Unity 6 (version 6000.4.1f1)** — it won't work with oth
 
 When I push new changes, you just need to pull them:
 
-1. Open Terminal
+1. Open Git Bash
 2. Run:
    ```
    cd ~/Desktop/golf-tycoon
