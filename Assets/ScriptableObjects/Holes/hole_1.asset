@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ec1811b0d9447c5a8137c28be71355, type: 3}
+  m_Name: hole_1
+  m_EditorClassIdentifier: Assembly-CSharp::GolfGame.Golf.HoleData
+  holeName: The Opener
+  par: 3
+  length: 0
+  hazardSet: 0
+  yardage: 150
+  fairwayWidth: 1
+  greenSize: 1
+  greenSlope: 0.1
+  greenSlopeDirection: {x: 1, y: 0}
+  hazards:
+  - type: 0
+    longitudinalPosition: 0.85
+    lateralOffset: 0.3
+    size: 0.8
+  - type: 0
+    longitudinalPosition: 0.9
+    lateralOffset: -0.25
+    size: 0.7
+  - type: 2
+    longitudinalPosition: 0.3
+    lateralOffset: 0.8
+    size: 1
+  - type: 2
+    longitudinalPosition: 0.5
+    lateralOffset: -0.8
+    size: 1.2
+  - type: 2
+    longitudinalPosition: 0.7
+    lateralOffset: 0.9
+    size: 0.9
+  - type: 2
+    longitudinalPosition: 0.15
+    lateralOffset: -0.7
+    size: 1
+  themeIndex: 0
+  elevationChange: 0
+  doglegAngle: 0
+  doglegPosition: 0.5

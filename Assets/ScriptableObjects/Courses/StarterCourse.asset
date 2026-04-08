@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3218db897ef42413094a57024b5fbaed, type: 3}
+  m_Name: StarterCourse
+  m_EditorClassIdentifier: Assembly-CSharp::GolfGame.Golf.CourseData
+  courseName: Starter Course
+  courseDescription: Your first course. Simple but fun!
+  holes:
+  - {fileID: 11400000, guid: f527b5d3b38634599bfc4f84fb7ad30f, type: 2}
+  - {fileID: 11400000, guid: 9a43cc271ff414aa799f14e4b605425c, type: 2}
+  - {fileID: 11400000, guid: daf2f2664f61848c59225c517d816a68, type: 2}
+  themeIndex: 0
+  ownerId: 
+  totalPar: 10
+  difficultyRating: 2

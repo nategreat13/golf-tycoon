@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73ec1811b0d9447c5a8137c28be71355, type: 3}
+  m_Name: hole_3
+  m_EditorClassIdentifier: Assembly-CSharp::GolfGame.Golf.HoleData
+  holeName: Island Green
+  par: 3
+  length: 0
+  hazardSet: 0
+  yardage: 165
+  fairwayWidth: 0.8
+  greenSize: 0.8
+  greenSlope: 0.3
+  greenSlopeDirection: {x: -1, y: 0}
+  hazards:
+  - type: 1
+    longitudinalPosition: 0.5
+    lateralOffset: 0
+    size: 2
+  themeIndex: 0
+  elevationChange: 0
+  doglegAngle: 0
+  doglegPosition: 0.5

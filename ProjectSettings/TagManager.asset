@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - GolfBall
+  - Fairway
+  - Rough
+  - Green
+  - Bunker
+  - Water
+  - OutOfBounds
+  - Hole
+  - Tee
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - ""
+  - Water
+  - UI
+  - ""
+  - ""
+  - Terrain
+  - Ball
+  - Hazards
+  - Course
+  - Buildings
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  - ""
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
