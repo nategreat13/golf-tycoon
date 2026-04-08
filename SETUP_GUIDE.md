@@ -11,14 +11,15 @@ This guide will walk you through everything you need to get the game running. No
 
 ## Step 2: Download the Project
 
-1. In Git Bash, paste these lines one at a time:
+1. In Git Bash, paste this and press Enter:
    ```
-   cd ~/Desktop
+   cd /c/Users/$USER/Desktop
    ```
+2. Then paste this and press Enter:
    ```
    git clone https://github.com/nategreat13/golf-tycoon.git
    ```
-2. Wait for the download to complete. You'll see a `golf-tycoon` folder on your Desktop.
+3. Wait for the download to complete. You'll see a `golf-tycoon` folder on your Desktop.
 
 ## Step 3: Install Unity Hub
 
@@ -62,7 +63,7 @@ When I push new changes, you just need to pull them:
 1. Open Git Bash
 2. Run:
    ```
-   cd ~/Desktop/golf-tycoon
+   cd /c/Users/$USER/Desktop/golf-tycoon
    git pull
    ```
 3. Switch back to Unity — it will re-import any changed files automatically
